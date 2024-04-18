@@ -9,7 +9,7 @@ mongoose.connect("mongodb+srv://thinkofyash:18NovMonday@cluster0.xay1cqj.mongodb
 // define Schemas 
 
 const UserSchema=new mongoose.Schema({
-    email:String,
+    username:String,
     password:String,
     purchasedCourses:[{
         type:mongoose.Schema.Types.ObjectId,

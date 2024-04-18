@@ -30,7 +30,7 @@ router.post("/signup",async function(req,res){
         msg:"Admin Successfully Created."
     })
 })
-
+// will be done when we work on JWT auth
 router.post("/signin",function(req,res){
     // logs in an admin account
 })
