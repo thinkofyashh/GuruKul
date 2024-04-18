@@ -1,4 +1,5 @@
 const express=require("express")
+const userMiddleWare = require("../MiddleWares/user")
 const router=express.Router()
 
 // users routes
@@ -13,10 +14,10 @@ router.post("/signin",function(req,res){
 router.get("/courses",function(req,res){
     // get courses
 })
-router.post("courses/:courseId",function(req,res){
+router.post("courses/:courseId",userMiddleWare,function(req,res){
     // buy courses
 })
-router.get("purchasedCourses",function(req,res){
+router.get("purchasedCourses",userMiddleWare,function(req,res){
     // get purchased course list
 })
 

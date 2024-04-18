@@ -3,7 +3,7 @@ const mongoose=require("mongoose");
 const { number } = require("zod");
 
 // connecting my mongoDb with project
-mongoose.connect("mongodb+srv://thinkofyash:18NovMonday@cluster0.xay1cqj.mongodb.net/");
+mongoose.connect("mongodb+srv://thinkofyash:18NovMonday@cluster0.xay1cqj.mongodb.net/gurukulDB");
 
 
 // define Schemas 
@@ -11,10 +11,14 @@ mongoose.connect("mongodb+srv://thinkofyash:18NovMonday@cluster0.xay1cqj.mongodb
 const UserSchema=new mongoose.Schema({
     email:String,
     password:String,
+    purchasedCourses:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'Course'
+    }]
 })
 
 const AdminSchema=new mongoose.Schema({
-    email:String,
+    username:String,
     password:String
 
 })
@@ -22,7 +26,7 @@ const AdminSchema=new mongoose.Schema({
 const CourseSchema=new mongoose.Schema({
     title:String,
     description:String,
-    price:number,
+    price:Number,
     imageLink:String
 })
 
