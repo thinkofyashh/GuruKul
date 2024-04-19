@@ -81,5 +81,4 @@ router.get("/purchasedCourses",userMiddleWare,async function(req,res){
     )
     return res.json({Course:purchasedCourses})
 })
-
 module.exports=router;
