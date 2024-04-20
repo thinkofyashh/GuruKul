@@ -1,5 +1,7 @@
 # Gurukul - Online Course Platform
 
+Gurukul, our online platform, embodies holistic education and mentorship. We foster meaningful connections between instructors and learners, offering diverse courses for personal growth and societal impact. Merge timeless wisdom with modern accessibility.
+
 ## Introduction
 
 Welcome to Gurukul, an online course platform designed to revolutionize the way we learn. Gurukul is a project created by Yash Rawat to showcase the fusion of traditional wisdom with modern technology, providing a platform for holistic education and personal growth.
